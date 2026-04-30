@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NTSC-rs Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NTSC-rs: NTSC Video Emulation (Web Demo)</h1>
+    <p>Upload an image and see NTSC emulation in action!</p>
+  </header>
+  <main>
+    <input type="file" id="inputImage" accept="image/*">
+    <button id="processBtn">Apply NTSC Filter</button>
+    <div class="image-container">
+      <canvas id="inputCanvas"></canvas>
+      <canvas id="outputCanvas"></canvas>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 NTSC-rs | <a href="https://github.com/ntsc-rs">GitHub</a></p>
+  </footer>
+  <script src="ntsc.js"></script>
+</body>
+</html>
